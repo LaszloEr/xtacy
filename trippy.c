@@ -65,6 +65,24 @@
 
 #define VERSION "1.14"
 
+Display *display;
+Screen *scr;
+
+int screen;
+int nwindows, nvisible;
+int *visible;
+Window *window;
+Colormap colmap; /* One map to bind them... */
+unsigned int *CX, *CY, *M, *HC;
+
+int numcolors;
+int share_colors;
+GC *color_gcs;
+long** colors; /* [NCOLORS][3]; */
+double SinTbl[32];
+
+char *progname;
+
 struct foo options;
 int *jj;
 int startup=0;

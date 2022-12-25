@@ -14,8 +14,8 @@ OBJS=bezier.o blob.o color.o cursor.o fields.o frame.o gravity.o kaleid.o \
 	starback.o swarm.o tag.o trippy.o waves.o xguts.o mirrors.o \
 	fractals.o modes.o
 
-CDEBUGFLAGS = -O3 -Wall -g
-CFLAGS = -O3 -fcommon
+CDEBUGFLAGS = -O2 -Wall -g
+CFLAGS = -O2 -fcommon
 
 ComplexProgramTarget(xtacy)
 
